@@ -1,2 +1,2 @@
 # HTML-CSS
-HTML and CSS exercises from the course by Curso Em Vídeo.
+HTML and CSS exercises from the Curso Em Vídeo course.
