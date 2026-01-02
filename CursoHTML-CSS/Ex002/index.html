@@ -9,10 +9,10 @@
 <body>
     <h1>Parágrafos e quebras de linha</h1>
     <hr> <!-- Linha horizontal -->
-    <p>Este é o primeiro parágrafo da página. Parágrafos são usados para organizar o texto em blocos distintos, facilitando a leitura e a compreensão do conteúdo.</p>
-    <p>Este é o segundo parágrafo. Note que há um espaço entre os parágrafos, o que ajuda a separar visualmente as ideias apresentadas.</p>
+    <p>Parágrafos são usados para organizar o texto em blocos distintos, facilitando a leitura e a compreensão do conteúdo.</p>
+    <p>Este é o segundo parágrafo. Há um espaço entre os parágrafos, o que ajuda a separar visualmente as ideias apresentadas.</p>
     <p>
-        É possível escrever um parágrafo de qualquer jeito, basta estar entre as tags &lt;p&gt; e &lt;/p&gt;. <!-- &lt; e &gt; são os símbolos de menor e maior que em HTML -->
+        É possível escrever um parágrafo de qualquer jeito, basta estar entre as tags &lt;p&gt; e &lt;/p&gt;.
     </p>
     <p>Se quisermos criar uma quebra de linha dentro de um parágrafo, podemos usar a tag &lt;br&gt; para indicar onde a linha deve ser quebrada.<br>
     Veja como funciona esta quebra de linha aqui.</p>
@@ -26,65 +26,114 @@
     <!-- &lt = Less than; &gt = Greater than -->
     <h1>Simbolos e Emojis</h1>
     <p>Alguns símbolos em HTML:</p>
-    <p>
-        &copy;
-        &reg;
-        &trade;
-        &euro;
-        &dollar;
-        &pound;
-        &yen;
-        &cent;
-        &Delta; &delta;
-        &uparrow; &uarr;
-
+    <p style="font-size: 25px;">
+        <!-- HTML Entities -> Name -->
+        &copy; -> Copyright <br>
+        &reg; -> Registered (Marca Registrada)<br>
+        &trade; -> Trademark <br>
+        &euro; -> Euro <br>
+        &dollar; -> Dollar $<br> <!-- Já é possivel adicionar esse simbolo em teclados comuns, sem muita necssidade de HTML Entities -->
+        &pound; -> Pound (Libra)<br>
+        &yen; -> Yen <br>
+        &cent; -> Cent <br>
+        &empty; -> Empty Set <br>
+        &sum; -> Summation (Soma)<br>
+        &Delta; -> Delta <br>
+        &delta; -> delta <br>
+        &uparrow; -> Up Arrow <br> <!-- uparrow = uarr -->
+        &uarr; -> Up Arrow <br>
+        &rarr; -> Right Arrow <br>
+        &larr; -> Left Arrow <br>
+        &darr; -> Down Arrow <br>
+<!-- 
         <br>
 
-        &lambda;
-        &mu;
-        &nu;
-        &xi;
-        &rho;
-        &tau;
-        &omega;
-        &Omega;
-        &alpha;
-        &beta;
-        &gamma;
-        &pi;
-        &sigma;
-        &Sigma;
-        &Sigma;
-        &Sigma;
-        &Sigma;
-        &sigma;
-        &theta;
-        &phi;
-        &infin;
-        &plusmn;
-        &divide;
-        &times;
-        &sect;
-        &para;
-        &hellip;
-        &mdash;
-        &ndash;
-        &iexcl;
-        &iquest;
-        &laquo;
-        &raquo;
-        &lsaquo;
-        &rsaquo;
-        &dagger;
-        &Dagger;
-        &bull;
-        &middot;
+        &nbsp; -> Non-breaking space (Whitespace)<br>
+        &lambda; -> lambda <br>
+        &mu; -> mu <br>
+        &nu; -> nu <br>
+        &xi; -> xi <br>
+        &rho; -> rho <br>
+        &tau; -> tau <br>
+        &omega; -> omega <br>
+        &Omega; -> Omega <br>
+        &alpha; -> alpha <br>
+        &beta; -> beta <br>
+        &gamma; -> gamma <br>
+        &pi; -> pi <br>
+        &sigma; -> sigma <br>
+        &Sigma; -> Sigma <br>
+        &theta; -> theta <br>
+        &phi; -> phi <br>
+        &infin; -> infinity <br>
+        &plusmn; -> plus minus <br>
+        &divide; -> divide <br>
+        &times; -> times <br>
+        &sect; -> section <br>
+        &para; -> paragraph <br>
+        &hellip; -> horizontal ellipsis <br>
+        &mdash; -> em dash <br>
+        &ndash; -> en dash <br>
+        &iexcl; -> inverted exclamation mark <br>
+        &iquest; -> inverted question mark <br>
+        &laquo; -> left-pointing double angle quotation mark <br>
+        &raquo; -> right-pointing double angle quotation mark <br>
+        &lsaquo; -> left-pointing single angle quotation mark <br>
+        &rsaquo; -> right-pointing single angle quotation mark <br>
+        &rAarr; -> Right Double Arrow <br>
+        &harr; -> Left Right Arrow <br>
+        &crarr; -> Carriage Return Arrow <br>
+        &dagger; -> dagger <br>
+        &Dagger; -> double dagger <br>
+        &bull; -> bullet <br>
+        &middot; -> middle dot <br>
+        &forall; -> For All <br>
+        &exist; -> There Exists <br>
+        &part; -> Partial Differential <br>
+        &nabla; -> Nabla <br>
+        &isin; -> Element of <br>
+        &notin; -> Not an Element of <br>
+        &ni; -> Contains as Member <br>
+        &prod; -> N-ary Product <br>
+        &sum; -> N-ary Sum <br>
+        &minus; -> Minus Sign <br>
+        &lowast; -> Asterisk Operator <br>
+        &radic; -> Square Root <br>
+        &prop; -> Proportional To <br>
+        &infin; -> Infinity <br>
+        &ang; -> Angle <br>
+        &and; -> Logical And <br>
+        &or; -> Logical Or <br>
+        &cap; -> Intersection <br>
+        &cup; -> Union <br>
+        &int; -> Integral <br>
+        &there4; -> Therefore <br>
+        &sim; -> Tilde Operator <br>
+        &cong; -> Approximately Equal To <br>
+        &asymp; -> Almost Equal To <br>
+        &ne; -> Not Equal To <br>
+        &equiv; -> Equivalent To <br>
+        &le; -> Less-Than or Equal To <br>
+        &ge; -> Greater-Than or Equal To <br>
+        &sub; -> Subset of <br>
+        &sup; -> Superset of <br>
+        &nsub; -> Not a Subset of <br>
+        &sube; -> Subset of or Equal to <br>
+        &supe; -> Superset of or Equal to <br>
+        &oplus; -> Circled Plus <br>
+        &otimes; -> Circled Times <br>
+        &perp; -> Perpendicular <br>
+        &sdot; -> Dot Operator <br>
+         -->
     </p>
 
     <p>Emoji: </p>
-
+    <p>Podem ser copiados e colados direto da Emojipedia como a seguir:</p>
     <p>😊 🚀 🌟</p>
-    
+    <p>
+        Porém o ideal é usar os seus <strong>Codepoints</strong><br>
+        Exemplo: &&#35;x1F44D (Utilizando código U+1F44D)<br>
+    </p>
     <p>
         &#x1F596;
         &#x1F44D; <!-- 👍 -->
