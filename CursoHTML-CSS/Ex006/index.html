@@ -14,7 +14,9 @@
 
     <!-- ol = ordered list -->
     
-    <ol type="I"> <!-- type pode ser "1" (números), "A" (letras maiúsculas), "a" (letras minúsculas), "I" (números romanos maiúsculos) ou "i" (números romanos minúsculos) --> <!-- Atributo start serve para definir o indicador inicial -->
+    <ol type="I"> 
+        <!-- type pode ser "1" (números), "A" (letras maiúsculas), "a" (letras minúsculas), "I" (números romanos maiúsculos) ou "i" (números romanos minúsculos) --> 
+        <!-- Atributo start serve para definir o indicador inicial; é um parametro númerico, mesmo indicando ordem com letras, por exemplo, o ponto de partida deve ser indicado com um número -->
         <li>Primeiro item</li>
         <li>Segundo item</li>
         <li>Terceiro item</li>
@@ -22,13 +24,15 @@
         <li>Quinto item</li>
     </ol>
 
+    <!-- A closing tag "</li>" é opcional em HTML5 -->
+
     <h2>Listas Não Ordenadas</h2>
     <p>
         As listas não ordenadas são usadas quando a ordem dos itens não é importante. Elas utilizam marcadores (bullets) para indicar cada item.
     </p>
 
     <!-- ul = unordered list -->
-     
+
     <ul type="circle"> <!-- type pode ser "disc" (padrão, círculo cheio), "circle" (círculo vazio) ou "square" (quadrado cheio) -->
         <li>Primeiro item</li>
         <li>Segundo item</li>
@@ -37,6 +41,73 @@
         <li>Quinto item</li>
     </ul>
 
-    <!-- A closing tag "</li>" é opcional em HTML5 -->
+    <!-- C9Aula02 -->
+    <h2>Listas de Aninhadas</h2>
+    <p>
+        Listas aninhadas são listas dentro de outras listas, ordenadas ou não. Elas podem ser usadas para criar hierarquias ou subcategorias.
+    </p>
+    <ol>
+        <li>Item 1
+            <ul>
+                <li>Subitem 1.1</li>
+                <li>Subitem 1.2</li>
+            </ul>
+        </li>
+        <li>Item 2
+            <ul>
+                <li>Subitem 2.1</li>
+                <li>Subitem 2.2</li>
+            </ul>
+        </li>
+        <li>Item 3</li>
+    </ol>
+
+    <h3>Exemplo</h3>
+    <h4>Lista de Jogos</h4>
+    <ol>
+        <li>NES</li>
+        <ul type="square">
+            <li>Super Mario Bros</li>
+            <ul type="circle">
+                <li>Super Mario Bros 2</li>
+                <li>Super Mario Bros 3</li>
+                <li>Super Mario World</li>
+            </ul>
+            <li>The Legend of Zelda</li>
+            <li>Ninja Gaiden</li>
+        </ul>
+        <li>SNES</li>
+        <ul type="square">
+            <li>Super Metroid</li>
+            <li>Donkey Kong Country</li>
+            <li>Street Fighter II</li>
+        </ul>
+        <li>PlayStation</li>
+        <ul type="square">
+            <li>Final Fantasy</li>
+            <li>Metal Gear Solid</li>
+            <li>Resident Evil</li>
+        </ul>
+    </ol>
+
+    <h2>Lista de Definições</h2>
+    <p>
+        Listas de definições são usadas para definir termos ou conceitos. Elas consistem em pares de termos e suas definições.
+    </p>     
+     
+    <!-- dl = definition list -->
+    <dl>
+        <dt>HTML</dt> <!-- dt = definition term -->
+        <dd>HyperText Markup Language: Linguagem de Marcação de Hipertexto usada para estruturar páginas web.</dd> <!-- dd = definition description -->
+        
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets: Folhas de Estilo em Cascata usadas para estilizar páginas web.</dd>
+        
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação usada para criar interatividade em páginas web.</dd>
+        
+        <dt>HTTP</dt>
+        <dd>HyperText Transfer Protocol: Protocolo de Transferência de Hipertexto usado para comunicação entre clientes e servidores web.</dd>
+    </dl> 
 </body>
 </html>
