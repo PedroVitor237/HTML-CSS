@@ -49,5 +49,47 @@
         Podemos usar a tag <sub>sub</sub> para subscrever um texto, como em fórmulas químicas: H<sub>2</sub>O
     </p>   
 
+    <h2>Código fonte & Pré-formatação</h2>
+    <!-- A tag <code> é usada para marcar código fonte utilizando fonte monoespaçada -->
+    <!-- A tag <pre> é usada para pré-formatar um texto considerando espaços e quebras de linha estritos dentro da tag -->
+    <p>
+        Para escrever um código fonte, usamos a tag <code>code</code> como em <code>console.log("Hello World")</code>
+    </p>
+    <p>
+        Para pré-formatar um texto, usamos a tag <code>pre</code> como em:
+    </p>
+    <pre>
+        <code>
+            num = int(input("Digite um número: "))
+            if num % 2 == 0:
+                print(f'O número {num} é par')
+            else:
+                print(f'O número {num} é ímpar')
+        </code>
+    </pre>
+
+    <h2>Citações simples</h2>
+    <p>
+        Podemos usar a tag <code>q</code> para citações simples, como: <q>Essa é uma citação simples.</q>
+    </p>
+
+    <h2>Citações completas</h2>
+    <p>
+        Podemos usar a tag <code>blockquote</code> para citações completas:
+    </p>
+        <!-- O atributo "cite" é útil para mecanismos de SEO do Google -->
+        <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/blockquote"> 
+            O HTML (Linguagem de Marcação de Hipertexto) é a espinha dorsal da web. Ele estrutura o conteúdo e define a semântica dos elementos em uma página web.
+        </blockquote>
+    
+    <h2>Abreviações</h2>
+    <p>
+        Podemos usar a tag <code>abbr</code> para abreviações, como: A sigla <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>.
+    </p>
+
+    <h2>Texto invertido</h2>
+    <p>
+        <bdo dir="rtl">Aprendendo HTML; subi no onibus</bdo> <!-- dir="rtl" (right to left) || dir="ltr" -->
+    </p>
 </body>
 </html>
